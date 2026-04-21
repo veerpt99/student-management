@@ -446,7 +446,7 @@ def page_analytics():
 
     if analytics["topper"]:
         topper = analytics["topper"]
-        percentage = (topper["marks"] / 100) * 100
+        percentage = topper["marks"]
         st.markdown(f"""
         <div style="background: #0f172a; border: 1px solid rgba(148, 163, 184, 0.16); border-radius: 18px; padding: 28px; box-shadow: 0 16px 50px rgba(0, 0, 0, 0.35);">
             <h2 style="margin-top: 0; color: #e2e8f0;">Top Performer</h2>
